@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-menu{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    color: white;
+    background-color: rgb(27, 27, 114);
+    text-align: center;
+    font-size: 18px;
+    padding: 11px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.menu-scomparsa{
+    display: none;
+    flex-direction: column;
+    color: rgb(27, 27, 114);
+    background-color: white;
+    font-size: 16px;
+    padding: 4px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    line-height: 22px;
+    z-index: 2;
+}
+.menu:hover .menu-scomparsa{
+    display: flex;
+}
+h3{
+    color: white;
+    background-color: #5995da;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+}
+.contenitore-istruzione{
+    float: left;
+    color: rgb(27, 27, 114);
+    background-color: white;
+    width: 50%;
+    padding-left: 5%;
+}
+h4{
+    font-size: 22px;
+    text-align: center;
+    padding: 35px 0;
+}
+.intestazione-guarino{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.abilita{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.intestazione-uni{
+    font-size: 18px;
+    margin-top: 25px;
+}
+.eipass{
+    margin-top: 25px;
+}
+.start{
+    margin-top: 25px;
+}
+.start p{
+    margin-bottom: 6px;
+}
+.contenitore-competenze{
+    float: left;
+    color: white;
+    background-color: rgb(27, 27, 114);
+    width: 50%;
+    padding-left: 5%;
+    padding-bottom: 7%;
+}
+.lingue{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.relazioni{
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.cap{
+    font-size: 18px;
+}
+.chat{
+    background-color: #5995da;
+    text-align: right;
+    padding-right: 1%;
+    position: relative;
+    z-index: 1;
+    clear: both;
+}
+.messaggi{
+    display: flex;
+    justify-content: flex-end;
+}
+.mess{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+}
+.messaggi{
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    z-index: 2;
+}
+.chat:hover .messaggi{
+    display: flex;
+}
+.messaggi textarea{
+    border: 1px solid #5995da;
+    min-height: 55px;
+}
+.messaggi button{
+    color: white;
+    background-color: #5995da;
+    border-radius: 10px;
+    padding: 5px;
+    max-height: 35px;
+}
+.footer{
+    clear: left;
+    width: 100%;
+    text-align: center;
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 15px;
+}
+@media only screen and (min-width: 401px) and (max-width:960px){
+    .corpo{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenitore-istruzione{
+        width: 100%;
+    }
+    .contenitore-competenze{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .menu-scomparsa{
+        position: absolute;
+        top: 32px;
+        left: -20px;
+        line-height: 22px;
+        z-index: 2;
+    }
+    .corpo{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenitore-istruzione{
+        width: 100%;
+    }
+    .contenitore-competenze{
+        width: 100%;
+    }
+}

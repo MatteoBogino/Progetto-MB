@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-menu{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    color: white;
+    background-color: rgb(27, 27, 114);
+    text-align: center;
+    font-size: 18px;
+    padding: 11px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.menu-scomparsa{
+    display: none;
+    flex-direction: column;
+    color: rgb(27, 27, 114);
+    background-color: white;
+    font-size: 16px;
+    padding: 4px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    line-height: 22px;
+    z-index: 2;
+}
+.menu:hover .menu-scomparsa{
+    display: flex;
+}
+section{
+    color: rgb(27, 27, 114);
+}
+h3{
+    color: white;
+    background-color: #5995da;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+}
+.contenitore-kaike{
+    background-color: whitesmoke;
+    padding: 30px;
+}
+.kaike p{
+    margin-left: 30px;
+    font-size: 22px;
+}
+.kaike{
+    float: left;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+.descr-kaike{
+    padding: 50px 40px;
+    font-size: 18px;
+}
+.contenitore-isiline{
+    color: white;
+    background-color: rgb(27, 27, 114);
+    padding: 30px;
+}
+.isiline p{
+    margin-left: 30px;
+    font-size: 22px;
+}
+.isiline{
+    float: left;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+.descr-isiline{
+    padding: 50px 40px;
+    font-size: 18px;
+}
+.contenitore-dylog{
+    background-color: white;
+    padding: 30px;
+}
+.dylog p{
+    margin-left: 30px;
+    font-size: 22px;
+}
+.dylog{
+    float: left;
+    margin-left: 80px;
+    margin-right: 70px;
+}
+.descr-dylog{
+    padding: 50px 40px;
+    font-size: 18px;
+}
+.chat{
+    background-color: #5995da;
+    text-align: right;
+    padding-right: 1%;
+    position: relative;
+    z-index: 1;
+}
+.messaggi{
+    display: flex;
+    justify-content: flex-end;
+}
+.mess{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+}
+.messaggi{
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    z-index: 2;
+}
+.chat:hover .messaggi{
+    display: flex;
+}
+.messaggi textarea{
+    border: 1px solid #5995da;
+    min-height: 55px;
+}
+.messaggi button{
+    color: white;
+    background-color: #5995da;
+    border-radius: 10px;
+    padding: 5px;
+    max-height: 35px;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 15px;
+}
+@media only screen and (min-width: 401px) and (max-width:960px){
+    .contenitore-kaike,
+    .contenitore-kaike a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenitore-isiline,
+    .contenitore-isiline a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenitore-dylog,
+    .contenitore-dylog a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}  
+@media only screen and (max-width: 400px){
+    .menu-scomparsa{
+        position: absolute;
+        top: 32px;
+        left: -20px;
+        line-height: 22px;
+        z-index: 2;
+    }
+}

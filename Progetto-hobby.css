@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-menu{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    color: white;
+    background-color: rgb(27, 27, 114);
+    text-align: center;
+    font-size: 18px;
+    padding: 11px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.menu-scomparsa{
+    display: none;
+    flex-direction: column;
+    color: rgb(27, 27, 114);
+    background-color: white;
+    font-size: 16px;
+    padding: 4px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    line-height: 22px;
+    z-index: 2;
+}
+.menu:hover .menu-scomparsa{
+    display: flex;
+}
+h3{
+    color: white;
+    background-color: #5995da;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+}
+.hobby{
+    color: rgb(27, 27, 114);
+    font-size: 18px;
+}
+.contenitore-hobby{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.elenco{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.hobby img{
+    border-radius: 100%;
+    margin: 0 auto;
+}
+.scritta{
+    width: 35%;
+    text-align: center;
+    margin: 8px auto;
+}
+.chat{
+    background-color: #5995da;
+    text-align: right;
+    padding-right: 1%;
+    position: relative;
+    z-index: 1;
+}
+.messaggi{
+    display: flex;
+    justify-content: flex-end;
+}
+.mess{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1%;
+}
+.messaggi{
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+    z-index: 2;
+}
+.chat:hover .messaggi{
+    display: flex;
+}
+.messaggi textarea{
+    border: 1px solid #5995da;
+    min-height: 55px;
+}
+.messaggi button{
+    color: white;
+    background-color: #5995da;
+    border-radius: 10px;
+    padding: 5px;
+    max-height: 35px;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 15px;
+}
+@media only screen and (min-width: 401px) and (max-width:960px){
+    .elenco{
+        width: 100%;
+    }
+    .scritta{
+        width: 70%;
+    }
+}  
+@media only screen and (max-width: 400px){
+    .menu-scomparsa{
+        position: absolute;
+        top: 32px;
+        left: -20px;
+        line-height: 22px;
+        z-index: 2;
+    }
+    .elenco{
+        width: 100%;
+    }
+    .scritta{
+        width: 70%;
+    }
+}

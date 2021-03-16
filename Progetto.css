@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-menu{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu{
+    color: white;
+    background-color: rgb(27, 27, 114);
+    text-align: center;
+    font-size: 18px;
+    padding: 11px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+.menu-scomparsa{
+    display: none;
+    flex-direction: column;
+    color: rgb(27, 27, 114);
+    background-color: white;
+    font-size: 16px;
+    padding: 4px 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    position: absolute;
+    left: 60px;
+    top: 0px;
+    line-height: 22px;
+    z-index: 2;
+}
+.menu:hover .menu-scomparsa{
+    display: flex;
+}
+.info{
+    background-image: url('Immagini/sfondo-blu.jpg');
+    height: 500px;
+}
+.foto{
+    float: left;
+    margin-left: 20%;
+    margin-top: 70px;
+    margin-bottom: -4px;
+}
+.info-personali{
+    float: left;
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 62px 35px;
+    padding-right: 250px;
+    margin-top: 70px;
+    min-height: 430px;
+}
+.info-personali li{
+    margin-bottom: 20px;
+    list-style-type: square ;
+}
+.nome{
+    margin-bottom: 40px;
+    margin-top: -45px;
+    font-size: larger;
+}
+.social{
+    clear: both;
+    color: rgb(27, 27, 114);
+    background-color: #5995da;
+    text-align: center;
+}
+.social a:link{
+    color: white;
+}
+.social a:visited{
+    color: orange;
+}
+.social a:hover,
+.social a:active{
+    color: green;
+}
+.social-colleg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-colleg a{
+    margin-right: 50px;
+    margin-top: 2px;
+}
+.presentazione{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 65px;
+    font-size: 18px;
+}
+.presentazione h3{
+    padding-top: 50px;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+.presentazione div{
+    line-height: 28px;
+}
+.testa-scrivimi{
+    display: flex;
+    justify-content: center;
+}
+.scrivimi{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 23px;
+    border: 2px solid #5995da;
+    border-radius: 8px;
+    width: 50%;
+    margin: 40px 200px;
+    padding: 30px;
+}
+.contenitore{
+    display: flex;
+    justify-content: center;
+}
+.contenitore-dati{
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #5995da;
+    border-radius: 8px;
+    width: 50%;
+    margin: 25px 200px;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+.visitatore{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.visitatore input[type="text"],
+.visitatore input[type="email"],
+.visitatore textarea{
+    width: 250px;
+    height: initial;
+}
+.visitatore label{
+    text-align: initial;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+}
+.visitatore textarea{
+    min-height: 200px;
+    resize: none;
+}
+.visitatore input[type="text"]:invalid,
+.visitatore input[type="email"]:invalid{
+    border: 1px solid #d55c5f;
+    color: #d55c5f;
+}
+.visitatore button{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #5995da;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-left: 185px;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    color: rgb(27, 27, 114);
+    background-color: whitesmoke;
+    padding: 15px;
+}
+@media only screen and (min-width: 401px) and (max-width:960px){
+    .info{
+        display: flex;
+    }
+    .foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2%;
+    }
+    .foto img{
+        width: 60%;
+        height: 55%;
+    }
+    .info-personali{
+        width: 50%;
+        margin: 0;
+    }
+    .info-personali li{
+        margin-bottom: 1px;
+    }
+    .visitatore,
+    .visitatore label,
+    .visitatore input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2%;
+    }
+    .visitatore input[type="text"],
+    .visitatore input[type="email"],
+    .visitatore textarea{
+        width: 80%;
+}
+.visitatore button{
+    padding: 7% 11%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+}
+@media only screen and (max-width: 400px){
+    .foto{
+        margin-left: 8%;
+    }
+    .info-personali{
+        padding: 0;
+        background-color: white;
+    }
+    .menu-scomparsa{
+        position: absolute;
+        top: 32px;
+        left: -20px;
+        line-height: 22px;
+        z-index: 2;
+    }
+    .visitatore,
+    .visitatore label,
+    .visitatore input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 5%;
+    }
+    .visitatore input[type="text"],
+    .visitatore input[type="email"],
+    .visitatore textarea{
+        width: 50%;
+    }
+.visitatore button{
+    padding: 7% 11%;
+    cursor: pointer;
+    margin-left: 15px;
+}
+}
